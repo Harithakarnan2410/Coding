@@ -1,0 +1,19 @@
+// Prints the digits of a number by traversing the number.
+
+class Main {
+    public static void main(String[] args) {
+        int n=56756;
+        while (n>0){
+            int ld=n%10;
+               System.out.println(ld);
+               n=n/10;
+        }
+     
+    }
+}
+/* output:
+6
+5
+7
+6
+5 /*
