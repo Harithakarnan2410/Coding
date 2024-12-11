@@ -143,3 +143,80 @@ class Main {
             System.out.println(sum);
     }
 }
+
+/* Write a program that gets n as input and print the factorial of a number(n!).
+
+Testcase 1 :
+
+Input : 
+
+3
+
+Expected output:
+
+6
+
+
+
+Testcase 2 :
+
+Input : 
+
+5
+
+Expected output:
+
+120 /*
+class Main {
+    public static void main(String[] args) {
+        int n=5;
+        int fact=1;
+        for(int i=1;i<=n;i++){
+            fact=fact*i;
+        }
+        System.out.println(fact);
+    }
+}
+
+/*
+Write a program that gets n as input and print all the prime numbers till that number.
+
+Testcase 1 :
+
+Input : 
+
+5
+
+Expected output:
+
+2 3 5
+
+
+
+Testcase 2 :
+
+Input : 
+
+11
+
+Expected output:
+
+2 3 5 7 11
+
+/*
+class Main {
+    public static void main(String[] args) {
+       int n=9;
+    for(int x=2;x<=n;x++){
+        int flag = 0;
+        for(int i=2;i<x;i++){
+            if(x%i==0){
+                flag = 1;
+            }
+        }
+        if(flag==0){
+            System.out.println(x);
+        }
+    }
+    }
+}
