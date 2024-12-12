@@ -234,6 +234,8 @@ import java.math.*;
         if(sum==n){
             System.out.println("its a perfect no");
         }
+       else{
+           System.out.println("its  not a perfect no");
     }
 }
 
