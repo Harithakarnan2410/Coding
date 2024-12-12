@@ -71,7 +71,6 @@ class KthDigitWithPower {
 
 
 
-// In online compilers use the below code
 
 class Main {
     public static void main(String[] args) {
@@ -106,17 +105,15 @@ Expected output:
 6 /*
 class Main {
     public static void main(String[] args) {
-        int n=325345;
-        int count=0;
-        if(n==0){
-            count=0;
+        int n=325345,count=0;
+        while(n>0){
+            int ld=n%10;
+            count=count+1;
+            n=n/10;
         }
-        else{
-            while(n!=0){
-              n/=10;
-           count++;  
-            }
-        }
+        System.out.println(count);
+    }
+}
 
 
 /*  Write a program that gets n as input and print the reverse of the number
