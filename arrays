@@ -155,4 +155,28 @@ class Solution {
 }
 }
 
+/*  Given an integer N, find the absolute difference between sum of the squares of first N natural numbers and square of sum of first N natural numbers.
 
+Example 1:
+
+Input: N = 2
+Output: 4 
+Explanation: abs|(12 + 22) - (1 + 2)2| = 4.  /*
+class Solution{
+    static long squaresDiff(int N){
+        return Math.abs((N*(N+1)*(2*N+1))/6-(long)Math.pow((N*(N+1)/2),2));
+    }
+}
+/*
+Consider a sample space consisting of all perfect squares starting from 1, 4, 9 and so on. You are given a number n, you have to find the number of integers less than n in the sample space.
+
+Examples :
+
+Input: n = 9
+Output: 2
+Explanation: 1 and 4 are the only Perfect Squares less than 9. So, the Output is 2. /*
+class Solution {
+    static int countSquares(int n) {
+        return (int)Math.sqrt(n-1);
+    }
+}
