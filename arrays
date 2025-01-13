@@ -104,3 +104,55 @@ class Solution {
         return sum;
     }
 }
+/*    Given a number N.Find the sum of fifth powers of natural numbers till N i.e. 15+25+35+..+N5.
+
+Example 1:
+
+Input:
+N=2
+Output:
+33
+Explanation:
+The sum is calculated as 15+25=1+32=33.
+Example 2:
+
+Input:
+N=3
+Output:
+276
+Explanation:
+The sum is calculated as 15+25+35
+=1+32+243=276. /*
+class Solution {
+    long sumOfFifthPowers(long N) {
+       int sum=0;
+        for(int i=1;i<=N;i++){
+            sum=sum+(i*i*i*i*i);
+        
+        }
+        return sum;
+    }
+}
+
+/*You are given an integer n. Your task is to reverse the digits, ensuring that the reversed number has no leading zeroes.
+
+Examples:
+
+Input: 200
+Output: 2
+Explanation: By reversing the digits of number, number will change into 2.
+Input : 122
+Output: 221
+Explanation: By reversing the digits of number, number will change into 221. /*
+class Solution {
+    public int reverseDigits(int n) {
+        int  sum=0;
+        while(n>0){
+            sum=sum*10+(n%10);
+            n=n/10;
+    }
+    return sum;
+}
+}
+
+
