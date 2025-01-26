@@ -365,3 +365,25 @@ class Main {
       
     }
 }
+class Main {
+    public static void main(String[] args) {
+        int n=5;
+        int [] a={1,2,3,4,5};
+        for(int i=0;i<n;i++){
+            for(int j=4;j>0;j--){
+                if(a[i]==a[j]){
+                    System.out.println(true);
+                    break;
+                }
+                
+                else{
+                   System.out.println(false);    
+                   break;
+                }
+            }
+            
+          
+        }
+       
+    }
+}
